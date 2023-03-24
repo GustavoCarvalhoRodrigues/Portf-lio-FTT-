@@ -15,7 +15,6 @@ body, html {
     
 header {
     background-color: #2D3345;
-    position: sticky;
     padding-bottom: 20px;
     width: 100vw;
     } 
@@ -64,6 +63,13 @@ header {
         text-decoration: none;
     }
 
+    ul > li > a:hover {
+        text-decoration: underline;
+        color: crimson;
+        transition-delay: 0.10ms;
+      
+    }
+
     hr {
         border: 1px solid rgba(192, 192, 192, 0.178);
         width: 90vw;
@@ -73,7 +79,7 @@ header {
     
     header {
         background-color: #2D3345;
-        padding-bottom: 5px;
+        padding-bottom: 1px;
         width: 100vw;
     }
 

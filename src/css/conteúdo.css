@@ -14,6 +14,10 @@ img.fundo {
     display: none;
 }
 
+img.background {
+    display: none;
+}
+
 main {
     margin: auto;
     width: 100vw;
@@ -59,16 +63,78 @@ section#servicos > p {
     line-height: 1.4em;
 }
 
- ::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
+ footer {
+    background-color: #2D3345;
+    margin: auto;
+    width: 100vw;
+    height: 75vh;
  }
-  
+
+ footer > h1 {
+     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    font-style: oblique;
+    font-size: 1.8em;
+    margin: 5px;
+ }
+
+ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+ol > li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
+    margin: 10px;
+}
+
+li.number {
+    font-size: 1.1em;
+}
+
+ ul.foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .foot > li > a > img {
+    width: 70%;
+ }
+
+ ul.foot > li {
+     background-color: rgba(0, 0, 0, 0.575);
+     border-radius: 10px;
+    transform: translate(10px, 35px);
+    padding: 5px;
+    margin: 6px;
+ }
+
+ ul.foot > li.redes-sociais {
+    color: lightcyan;
+    background-color: transparent;
+ }
+
+ .foot > li > a:hover {
+    text-decoration: none;
+ }
+
+ footer > p {
+    color: lavender;
+    font-size: 0.8em;
+    margin-top: 40px;
+ }
+
  @media screen and (min-width:780px) {
 
     img.fundo {
         display: block;
         border-radius: 2px;
+        transform: rotate3d(1, -1, 0, 45deg);
         position: absolute;
         top: 47%;
         left: 65%;
@@ -76,6 +142,18 @@ section#servicos > p {
         height: 400px;
         z-index: 0;
     } 
+    
+    img.background {
+        display: block;
+        border-radius: 2px;
+        transform: rotate3d(5, 2, -3, 45deg);
+        position: absolute;
+        top: 116%;
+        right: 74%;
+        width: 25%;
+        height: 208px;
+        z-index: 0;
+    }
 
     main {
         margin: auto;
@@ -122,5 +200,20 @@ section#servicos > p {
         margin: 12px;
         line-height: 1.8em;
     }
+
+    footer {
+        height: 60vh;
+    }
+
+    ul.foot {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+     }
     
+ }
+
+ ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
  }
