@@ -13,7 +13,7 @@ main {
     width: 100vw;
 }
 
-section.quem-somos {
+section#quem-somos {
     background-color: rgba(192, 192, 192, 0.336);
     border: 5px groove;
     border-radius: 5px 6px 4px 5px;
@@ -21,7 +21,7 @@ section.quem-somos {
     margin-top: 1px;
 }
 
-section.quem-somos  > img{
+section#quem-somos  > img{
     display: block;
     margin: auto;
     margin-top: 1px;
@@ -29,14 +29,14 @@ section.quem-somos  > img{
     width: 100vw;
 }
 
-section.quem-somos > p {
+section#quem-somos > p {
     color: darkslategray;
     text-align: left;
     margin: 12px;
     line-height: 1.4em;
 }
   
-section.servicos {
+section#servicos {
     background-color: rgba(192, 192, 192, 0.336);
     border: 5px groove;
     border-radius: 5px 6px 4px 5px;
@@ -44,7 +44,7 @@ section.servicos {
     margin-top: 1px;
 }
 
-section.servicos > p {
+section#servicos > p {
     color: darkslategray;
     text-align: left;
     margin: 12px;
