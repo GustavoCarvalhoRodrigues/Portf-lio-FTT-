@@ -209,6 +209,7 @@ section#quem-somos > img{
 section#quem-somos > img:hover {
     transform: skewY(-4deg);
    transition-duration: 0.5s;
+   cursor: pointer;
 }
 
 section#quem-somos > h3 {
@@ -247,6 +248,7 @@ section.quem-somos-2 > img{
 section.quem-somos-2 > img:hover {
     transform: skewY(-4deg);
    transition-duration: 0.5s;
+   cursor: pointer;
 }
 
 section.quem-somos-2 > h3 {
@@ -286,6 +288,7 @@ section.quem-somos-3 > img{
 section.quem-somos-3 > img:hover {
     transform: skewY(-4deg);
    transition-duration: 0.5s;
+   cursor: pointer;
 }
 
 section.quem-somos-3 > h3 {
