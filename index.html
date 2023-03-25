@@ -9,8 +9,10 @@
     <title>Portfóio FTT</title>
 </head>
 <body onresize="mudouTamanho()">
+    <!-- Imagens de fundo em transformação 3d -->
     <img class="fundo" src="imagens/pexels-veeterzy-303383.jpg" alt="imagem-tecnologia">
     <img class="background" src="imagens/pexels-pixabay-4158.jpg" alt="imagem-fundo">
+    <!-- Menu com a logo e responsivo -->
     <header>
         <i><img src="imagens/ftt-logo.jpg" alt="imagem-logo">Fábrica de Tecnologias Turing</i>
         <i class="menu-nao-estatico" onclick="clickMenu()"><img src="imagens/icons8-cardápio.gif" alt="menu não estático"></i>
@@ -24,6 +26,7 @@
             </ul>
         </nav>
     </header>
+    <!-- Conteúdo adaptavel para diversos tamanhos de tela -->
         <main>
             <section id="quem-somos">
                 <img src="imagens/images.jpg" alt="imagem-ftt">
@@ -35,6 +38,7 @@
                 <p>Entre os serviços oferecidos pela Fábrica de Tecnologias Turing estão o desenvolvimento de software sob demanda, consultoria em tecnologia da informação, desenvolvimento de aplicativos móveis, desenvolvimento de websites, automação de processos, inteligência artificial, big data e análise de dados, entre outros. A Fábrica também realiza projetos de pesquisa e desenvolvimento em parceria com empresas e instituições, com foco em tecnologias emergentes e soluções inovadoras para diferentes setores da economia.</p>
             </section>
         </main>
+        <!-- Rodapé -->
        <footer>
         <h1>Fábrica de Tecnologias Turing</h1>
         <ol>
@@ -50,7 +54,7 @@
         </ul>
         <p>&copy;Copyright UniEVANGÉLICA 1947 - 2023</p>
        </footer>
-       
+       <!-- Script do menu para telas menores -->
        <script>
             function mudouTamanho() {
               if (window.innerWidth >= 780) {
@@ -67,8 +71,6 @@
                 menu.style.display = 'block'
             }
           }
-          </script>
-
-      
+        </script>      
 </body>
 </html>

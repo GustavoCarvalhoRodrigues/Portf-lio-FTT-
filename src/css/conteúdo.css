@@ -10,76 +10,70 @@ body, html {
     background-color: rgb(112 128 144 / 13%);
 }
 
-img.fundo {
-    display: none;
-}
+    /* Imagens 3d só em telas médias e grandes */
+    img.fundo {
+        display: none;
+    }
+    
+    img.background {
+        display: none;
+    }
 
-img.background {
-    display: none;
-}
+    /* Conteúdo para telas menores */
+    main {
+        margin: auto;
+        width: 100vw;
+    }
 
-main {
-    margin: auto;
-    width: 100vw;
-}
+    section#quem-somos {
+        background-color: rgba(192, 192, 192, 0.336);
+        border: 5px groove;
+        border-radius: 5px 6px 4px 5px;
+        transform: rotateY(29deg);
+        margin-top: 1px;
+    }
 
-section#quem-somos {
-    background-color: rgba(192, 192, 192, 0.336);
-    border: 5px groove;
-    border-radius: 5px 6px 4px 5px;
-    transform: rotateY(29deg);
-    margin-top: 1px;
-}
+    section#quem-somos > img {
+        display: block;
+        margin: auto;
+        margin-top: 1px;
+        height: 18vw;
+        width: 100vw;
+    }
 
-section#quem-somos  > img{
-    display: block;
-    margin: auto;
-    margin-top: 1px;
-    height: 18vw;
-    width: 100vw;
-}
+    section#quem-somos > p {
+        text-indent: 10px;
+        color: darkslategray;
+        text-align: left;
+        margin: 12px;
+        line-height: 1.4em;
+    }
 
-section#quem-somos > p {
-    text-indent: 10px;
-    color: darkslategray;
-    text-align: left;
-    margin: 12px;
-    line-height: 1.4em;
-}
-  
-section#servicos {
-    background-color: rgba(192, 192, 192, 0.336);
-    border: 5px groove;
-    border-radius: 5px 6px 4px 5px;
-    transform: rotateY(29deg);
-    margin-top: 1px;
-}
+    section#servicos {
+        background-color: rgba(192, 192, 192, 0.336);
+        border: 5px groove;
+        border-radius: 5px 6px 4px 5px;
+        transform: rotateY(29deg);
+        margin-top: 1px;
+    }
 
-section#servicos > p {
-    text-indent: 10px;
-    color: darkslategray;
-    text-align: left;
-    margin: 12px;
-    line-height: 1.4em;
-}
+    section#servicos > p {
+        text-indent: 10px;
+        color: darkslategray;
+        text-align: left;
+        margin: 12px;
+        line-height: 1.4em;
+    }
 
- footer {
+    /* Rodapé tela menor */
+   footer {
     background-color: #2D3345;
     margin: auto;
     width: 100vw;
     max-height: 76vh;
- }
+   }
 
- footer > h1 {
-     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 300;
-    font-style: oblique;
-    font-size: 1.8em;
-    margin: 5px;
- }
-
-ol {
+   ol {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,32 +123,33 @@ li.number {
     margin-top: 40px;
  }
 
- @media screen and (min-width:780px) {
-
+/* Conteúdo para telas medias e grandes */
+@media screen and (min-width:780px) {
+    /* Imagens com transformação 3d */
     img.fundo {
-        display: block;
-        border-radius: 2px;
-        transform: rotate3d(1, -1, 0, 45deg);
-        position: absolute;
-        top: 47%;
-        left: 65%;
-        width: 27%;
-        height: 400px;
-        z-index: 0;
-    } 
-    
-    img.background {
-        display: block;
-        border-radius: 2px;
-        transform: rotate3d(5, 2, -3, 45deg);
-        position: absolute;
-        top: 116%;
-        right: 74%;
-        width: 25%;
-        height: 208px;
-        z-index: 0;
-    }
+    display: block;
+    border-radius: 2px;
+    transform: rotate3d(1, -1, 0, 45deg);
+    position: absolute;
+    top: 19vw;
+    left: 65%;
+    width: 27%;
+    height: 400px;
+    z-index: 0;
+} 
 
+img.background {
+    display: block;
+    border-radius: 2px;
+    transform: rotate3d(5, 2, -3, 45deg);
+    position: absolute;
+    top: 106%;
+    right: 73%;
+    width: 25%;
+    height: 208px;
+    z-index: 0;
+    }
+    
     main {
         margin: auto;
         width: 100vw;
@@ -169,7 +164,7 @@ li.number {
     }
     
     section#quem-somos  > img{
-    display: block;
+        display: block;
     border-radius: 5px;
     transform: rotate3d(8, 17, -12, -1deg);
     opacity: 10;
@@ -185,7 +180,7 @@ li.number {
         margin: 12px;
         line-height: 1.8em;
     }
-      
+    
     section#servicos {
         background-color: rgba(192, 192, 192, 0.336);
         border: 5px groove;
@@ -202,7 +197,7 @@ li.number {
         margin: 12px;
         line-height: 1.8em;
     }
-
+    /* Rodapé telas médias e grandes */
     footer {
         min-height: 55vh;
     }
@@ -211,10 +206,12 @@ li.number {
         display: flex;
         flex-direction: row;
         justify-content: center;
-     }
+    }
     
- }
+}
 
+
+ /* Tira rolagem da página */
  ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
