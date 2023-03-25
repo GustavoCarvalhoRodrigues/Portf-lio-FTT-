@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body, html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(112 128 144 / 13%);
+}
+
+main {
+    margin: auto;
+    width: 100vw;
+    background-color: rgba(245, 245, 245, 0.664);
+}
+
+main > h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: brown;
+    text-shadow: 2px 2px 3px #0000007a;
+}
+
+section#quem-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(192, 192, 192, 0.336);
+    border: 1px solid steelblue;
+    border-radius: 5px 6px 4px 5px;
+    transform: rotateY(136deg);
+    width: 101%;
+    height: 223px;
+}
+
+section#quem-somos > img{
+    border: 1px groove rgba(0, 0, 0, 0.644);
+    border-radius: 11px;
+    transform: translate(-4px, 2px);
+    width: 48%;
+    height: 154px;
+}
+
+section#quem-somos > h3 {
+    text-align: start;
+    transform: rotateY(180deg);
+    margin-right: 32px;
+}
+
+section#quem-somos > p {
+    color: chocolate;
+    text-align: center;
+    transform: rotateY(156deg);
+}
+
+/* Rodapé tela menor */
+footer {
+    background-color: #2D3345;
+    margin: auto;
+    width: 100vw;
+    max-height: 76vh;
+   }
+
+   ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+ol > li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
+    margin: 10px;
+}
+
+li.number {
+    font-size: 1.1em;
+}
+
+ ul.foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .foot > li > a > img {
+    width: 70%;
+ }
+
+ ul.foot > li {
+     background-color: rgba(0, 0, 0, 0.575);
+     border-radius: 10px;
+    transform: translate(10px, 35px);
+    padding: 5px;
+    margin: 6px;
+ }
+
+ ul.foot > li.redes-sociais {
+    color: lightcyan;
+    background-color: transparent;
+ }
+
+ .foot > li > a:hover {
+    text-decoration: none;
+ }
+
+ footer > p {
+    color: lavender;
+    font-size: 0.8em;
+    margin-top: 40px;
+ }
+
+ /* Conteúdo para telas medias e grandes */
+@media screen and (min-width:780px) {
+ 
+main {
+        margin: auto;
+        width: 100vw;
+}
+
+section#quem-somos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(192, 192, 192, 0.336);
+    border: 1px solid steelblue;
+    border-radius: 5px 6px 4px 5px;
+    transform: rotateY(136deg);
+    margin: auto;
+    width: 80%;
+    height: 255px;
+}
+
+section#quem-somos > img{
+    border: 1px groove rgba(0, 0, 0, 0.644);
+    border-radius: 11px;
+    transform: translate(-10px, 2px);
+    width: 38%;
+    height: 168px;
+}
+
+section#quem-somos > img:hover {
+    transform: skewY(-4deg);
+   transition-duration: 0.5s;
+}
+
+section#quem-somos > h3 {
+    text-align: start;
+    transform: rotateY(180deg);
+    margin-right: 32px;
+}
+
+section#quem-somos > p {
+    font-size: 1.4em;
+    font-family: monospace;
+}
+
+/* Rodapé telas médias e grandes */
+footer {
+    min-height: 55vh;
+}
+
+ul.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+}
+
+/* Tira rolagem da página */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+ }
