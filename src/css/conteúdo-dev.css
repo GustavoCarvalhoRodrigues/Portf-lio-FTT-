@@ -16,6 +16,10 @@ main {
     background-color: rgba(245, 245, 245, 0.664);
 }
 
+div > img {
+    width: 50%;
+}
+
 main > h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: brown;
