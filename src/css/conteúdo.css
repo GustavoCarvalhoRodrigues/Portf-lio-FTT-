@@ -22,7 +22,7 @@ body, html {
     /* Conteúdo para telas menores */
     main {
         margin: auto;
-       min-width: 527px;
+        min-width: 453px;
     }
 
     section#quem-somos {
@@ -70,7 +70,7 @@ body, html {
     background-color: #2D3345;
     margin: auto;
     width: 100vw;
-    max-height: 76vh;
+    max-height: 66vh;
    }
 
    ol {
@@ -211,7 +211,7 @@ img.background {
 }
 
 
- /* Tira rolagem da página */
+/* Tira rolagem da página */
  ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
