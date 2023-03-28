@@ -32,8 +32,8 @@ section#quem-somos {
     box-shadow: 0px 1px 7px 2px seashell;
     margin: auto;
     margin-top: 10px;
-    width: 51vw;
-    height: 369px;
+    max-width: 53vw;
+    height: 385px;
 }
 
 section#quem-somos > img{
