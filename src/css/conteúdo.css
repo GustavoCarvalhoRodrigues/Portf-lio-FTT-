@@ -22,7 +22,7 @@ body, html {
     /* Conteúdo para telas menores */
     main {
         margin: auto;
-        min-width: 453px;
+        width: 100vw;
     }
 
     section#quem-somos {
@@ -200,7 +200,7 @@ img.background {
     }
     /* Rodapé telas médias e grandes */
     footer {
-        max-height: 100vh;
+        min-height: 46vh;
     }
 
     ul.foot {
