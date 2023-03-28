@@ -55,6 +55,7 @@ body, html {
         border-radius: 5px 6px 4px 5px;
         transform: rotateY(29deg);
         margin-top: 1px;
+
     }
 
     section#servicos > p {
@@ -160,7 +161,7 @@ img.background {
         border-radius: 5px 6px 4px 5px;
         transform: rotateY(35deg);
         padding-bottom: 30px;
-        width: 80vw;
+        max-width: 80vw;
     }
     
     section#quem-somos  > img{
@@ -187,7 +188,7 @@ img.background {
         border-radius: 5px 6px 4px 5px;
         transform: rotateY(35deg);
         padding-bottom: 30px;
-        width: 80vw;
+        max-width: 80vw;
     }
     
     section#servicos > p {
@@ -199,7 +200,7 @@ img.background {
     }
     /* Rodapé telas médias e grandes */
     footer {
-        max-height: 69vh;
+        max-height: 100vh;
     }
 
     ul.foot {
