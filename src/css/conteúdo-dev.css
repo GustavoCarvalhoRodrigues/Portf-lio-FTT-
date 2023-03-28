@@ -134,10 +134,25 @@ main {
     width: 100vw;
 }
 
+
 main > h1 {
     text-shadow: -3px -3px 3px cornsilk;
     font-size: 4vw;
     color: crimson;
+}
+
+@keyframes quem-somos {
+    0% {
+        transform: translateX(40px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+section#quem-somos {
+    animation: quem-somos infinite 5s;
+    margin-left: 10px;
 }
 
 section#quem-somos > img{
@@ -157,15 +172,14 @@ section#quem-somos > img{
 
 section#quem-somos > h3 {
     font-size: 1.7vw;
-    transform: translate(10px, 44px);
+    transform: translate(10px, -161px);
     position: absolute;
-    top: 463px;
 }
 
 section#quem-somos > p {
   text-align: center;
   font-size: 1.1em;
-  margin: -13px;
+  margin: 8px;
 }
 
 /* Rodapé telas médias e grandes */
