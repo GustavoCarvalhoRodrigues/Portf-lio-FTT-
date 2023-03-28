@@ -22,7 +22,7 @@ body, html {
     /* Conteúdo para telas menores */
     main {
         margin: auto;
-        width: 100vw;
+       min-width: 527px;
     }
 
     section#quem-somos {
@@ -34,11 +34,11 @@ body, html {
     }
 
     section#quem-somos > img {
-        display: block;
-        margin: auto;
-        margin-top: 1px;
-        height: 18vw;
-        width: 100vw;
+    display: block;
+    margin: auto;
+    margin-top: 1px;
+    height: 16vw;
+    width: 101vw;
     }
 
     section#quem-somos > p {

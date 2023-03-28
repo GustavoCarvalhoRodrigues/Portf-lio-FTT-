@@ -13,114 +13,62 @@ body, html {
 main {
     margin: auto;
     width: 100vw;
-    background-color: rgba(245, 245, 245, 0.664);
-}
-
-div > img {
-    width: 50%;
+    background-color: cadetblue;
 }
 
 main > h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: brown;
-    text-shadow: 2px 2px 3px #0000007a;
+    color: powderblue;
+    text-shadow: -3px -3px 3px tomato;
 }
 
 section#quem-somos {
-    background-image: linear-gradient(-101deg, brown, gainsboro);
-    display: grid;
-    align-content: center;
-    justify-items: end;
-    transform: skewy(7deg);
-    width: 47vw;
-    height: 180px;
+    background-image: linear-gradient(-23deg, cadetblue, tomato);
+    border-radius: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 7px 2px seashell;
+    margin: auto;
+    margin-top: 10px;
+    width: 51vw;
+    height: 369px;
 }
 
 section#quem-somos > img{
-    border-radius: 5px;
-    margin: 5px;
-    width: 29%;
+    border-radius: 58px;
+    position: relative;
+    width: 99px;
+    height: 95px;
 }
 
 section#quem-somos > h3 {
-    color: whitesmoke;
+    color: honeydew;
     font-size: 2.2vw;
-    transform: skew(-1deg, 0deg);
+    position: relative;
+    bottom: -141px;
 }
 
 section#quem-somos > p {
-    text-align: start;
-    text-indent: 15px;
-    color: #000000c4;
-    padding: 1px;
-    line-height: 1.3em;
+    color: ghostwhite;
+    text-align: center;
+    text-indent: 10px;
+    line-height: 1.6em;
+    padding: 10px;
 }
 
-section.quem-somos-2 {
-    background-image: linear-gradient(-101deg, brown, wheat);
-    display: grid;
-    align-content: center;
-    justify-items: start;
-    transform: translate(53vw, 0px);
-    width: 47vw;
-    height: 180px;
+hr.cont {
+    border: 16px solid cadetblue;
+    width: 100%;
 }
 
-section.quem-somos-2 > img{
-    border-radius: 5px;
-    width: 24%;
-    margin: 5px;
-}
-
-section.quem-somos-2 > h3 {
-    font-size: 2.5vw;
-    transform: skew(-1deg, 0deg);
-}
-
-section.quem-somos-2 > p {
-    text-align: start;
-    color: #000000ab;
-    line-height: 1.3em;
-    padding-left: 10px;
-    margin: 1%;
-}
-
-section.quem-somos-3 {
-    background-image: linear-gradient(-265deg, brown, darkgray);
-    display: grid;
-    justify-items: center;
-    transform: skewy(7deg);
-    margin-top: 10px;
-    width: 55vw;
-    height: 180px;
-    align-content: center;
-}
-
-section.quem-somos-3 > img{
-    border-radius: 5px;
-    width: 27%;
-    margin: 5px;
-}
-
-section.quem-somos-3 > h3 {
-    font-size: 2.5vw;
-    transform: skew(-1deg, 0deg);
-    color: yellowgreen;
-}
-
-section.quem-somos-3 > p {
-    text-align: start;
-    color: #000000ab;
-    line-height: 1.3em;
-    padding-left: 10px;
-}
 /* Rodapé tela menor */
 footer {
     background-color: #2D3345;
     margin: auto;
-    margin-top: 14px;
     width: 100vw;
-    max-height: 76vh;
+    max-height: 65vh;
    }
 
    ol {
@@ -177,68 +125,47 @@ li.number {
 @media screen and (min-width:780px) {
  
 main {
-        margin: auto;
-        width: 100vw;
+    background-color: rgb(112 128 144 / 29%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+    width: 100vw;
 }
 
-section#quem-somos {
-   
+main > h1 {
+    text-shadow: -3px -3px 3px cornsilk;
+    font-size: 4vw;
+    color: crimson;
 }
 
 section#quem-somos > img{
-  
+  width: 132px;
+  height: 110px;
+  animation: img 5s infinite cubic-bezier(0.4, 0, 0.17, 0.98);
 }
 
-section#quem-somos > img:hover {
-   
+@keyframes  img {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 section#quem-somos > h3 {
-    
+    font-size: 1.7vw;
+    transform: translate(10px, 44px);
+    position: absolute;
+    top: 463px;
 }
 
 section#quem-somos > p {
-  
-}
-
-section.quem-somos-2 {
-  
-}
-
-section.quem-somos-2 > img{
-   
-}
-
-section.quem-somos-2 > img:hover {
-    
-}
-
-section.quem-somos-2 > h3 {
-    
-}
-
-section.quem-somos-2 > p {
-    
-}
-
-section.quem-somos-3 {
-   
-}
-
-section.quem-somos-3 > img{
-   
-}
-
-section.quem-somos-3 > img:hover {
-   
-}
-
-section.quem-somos-3 > h3 {
-   
-}
-
-section.quem-somos-3 > p {
-  
+  text-align: center;
+  font-size: 1.1em;
+  margin: -13px;
 }
 
 /* Rodapé telas médias e grandes */

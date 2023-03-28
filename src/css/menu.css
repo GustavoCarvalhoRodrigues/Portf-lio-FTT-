@@ -75,6 +75,16 @@ header {
         width: 90vw;
     }
 
+    hr.vertical {
+        border: 1px solid rgba(192, 192, 192, 0.178);
+        width: 90vw;
+    }
+
+    /* hr da página de desenvolvedores */
+    hr.cont {
+    border: 16px solid darkcyan;
+    }
+
     /* Menu para telas de tamanho médio e grande */
 @media screen and (min-width:780px) {
     
@@ -117,11 +127,11 @@ header {
         border: 1px groove silver;
     }
 
-    hr.vertical {
+    hr {
         display: none;
     }
 
-    hr {
+    hr.vertical {
     display: block;
     background-color: #d8bfd894;
     transform: rotateZ(90deg);
