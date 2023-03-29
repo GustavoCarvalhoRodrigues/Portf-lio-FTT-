@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link rel="stylesheet" href="src/css/projetos.css">
+    <title>Portfólio FTT</title>
+</head>
+<body>
+    <header>
+        <i><img src="imagens/ftt-logo.jpg" alt="imagem-logo">Fábrica de Tecnologias Turing</i>
+        <i class="menu-nao-estatico" onclick="clickMenu()"><img src="imagens/icons8-cardápio.gif" alt="menu não estático"></i>
+        <nav id="menu">
+            <ul type="none">
+                <hr class="vertical">
+                <li><a href="index.html">Início</a></li> 
+                <hr>
+                <li><a href="desenvolvedores.html">Desenvolvedores</a></li> 
+                <hr>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+     <!-- Rodapé -->
+     <footer>
+        <h1>Fábrica de Tecnologias Turing</h1>
+        <ol>
+            <li>Av. Universitária KM 3,5 Bloco H Cidade Universitária
+            Anápolis, Goiás</li>
+            <li>CEP: 75070-290</li>
+            <li class="number">TELEFONE: 0800 603 2023</li>
+        </ol>
+        <ul class="foot" type="none">
+            <li class="redes-sociais">Contatos:</li>
+            <li><a href="https://www.linkedin.com/company/ftt-unievangelica/" target="_blank"><img src="imagens/icons8-linkedin-48.png" alt="imagem-Linkedin"></a></li>
+            <li><a href="https://www.instagram.com/uni.computacaoesoftware/" target="_blank"><img src="imagens/icons8-instagram-48.png" alt="imagem-instagram"></a></li>
+        </ul>
+        <p>&copy;Copyright UniEVANGÉLICA 1947 - 2023</p>
+       </footer>
+       <!-- Script do menu para telas menores -->
+    <script>
+        function mudouTamanho() {
+          if (window.innerWidth >= 780) {
+              menu.style.display = 'block'
+          } else {
+            menu.style.display = 'none'
+          }
+        }
+      
+        function clickMenu () {
+       if (menu.style.display == 'block') {
+             menu.style.display = 'none'
+        } else {
+            menu.style.display = 'block'
+        }
+      }
+    </script>  
+</body>
+</html>
