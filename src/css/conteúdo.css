@@ -71,7 +71,7 @@ body, html {
     background-color: #2D3345;
     margin: auto;
     width: 100vw;
-    max-height: 70vh;
+    min-height: 46vh;
    }
 
    ol {
@@ -140,12 +140,12 @@ li.number {
 } 
 
 img.background {
-    display: block;
+    display: inline-block;
     border-radius: 2px;
-    transform: rotate3d(5, 2, -3, 45deg);
+    transform: rotate3d(13, 27, 10, 39deg);
     position: absolute;
-    top: 134%;
-    right: 73%;
+    top: 138%;
+    right: 72vw;
     width: 25%;
     height: 208px;
     z-index: 0;
@@ -200,7 +200,7 @@ img.background {
     }
     /* Rodapé telas médias e grandes */
     footer {
-        min-height: 50vh;
+        min-height: 35vh;
     }
 
     ul.foot {
