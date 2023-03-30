@@ -71,7 +71,7 @@ body, html {
     background-color: #2D3345;
     margin: auto;
     width: 100vw;
-    min-height: 46vh;
+    min-height: 43vh;
    }
 
    ol {
@@ -165,7 +165,7 @@ img.background {
     }
     
     section#quem-somos  > img{
-        display: block;
+    display: block;
     border-radius: 5px;
     transform: rotate3d(8, 17, -12, -1deg);
     opacity: 10;
