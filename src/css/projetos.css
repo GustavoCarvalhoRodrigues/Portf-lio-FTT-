@@ -33,7 +33,7 @@ section > h1{
 
 div#project {
    height: 40vw;
-   margin: 10px;
+   margin: 8px;
 }
 
 div#project > h4 {
@@ -52,8 +52,8 @@ div#project > h4 {
 }
 
 div.um > img {
-    width: 88%;
-    height: 71%;
+    max-width: 94%;
+    min-height: 71%;
     border-radius: 1px 10px 1px 10px;
 }
 
