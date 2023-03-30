@@ -1,2 +1,132 @@
 @charset "UTF-8";
 
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body, html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: slategrey;
+    background-size: contain;
+}
+
+main {
+    background-color: rgba(112, 128, 144, 0.616);
+    margin: auto;
+    width: 100vw;
+}
+
+section {
+   display: inline-flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+section > h1{
+    font-family: fantasy;
+    font-size: 2.3em;
+    color: crimson;
+    text-shadow: -2px 0px 2px azure;
+}
+
+div#project {
+   height: 40vw;
+   margin: 10px;
+}
+
+div#project > h4 {
+    color: cornsilk;
+    font-family: cursive;
+    font-size: 1.2em;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+.um, .dois, .tres {
+    border: 1px solid antiquewhite;
+    background-color: brown;
+    width: 34%;
+}
+
+div.um > img {
+    width: 88%;
+    height: 71%;
+    border-radius: 1px 10px 1px 10px;
+}
+
+div.dois > img {
+    width: 88%;
+    height: 71%;
+    border-radius: 1px 1px 22px 1px;
+}
+
+div.tres > img {
+    width: 88%;
+    height: 85%;
+    border-radius: 28px 1px 28px 1px;
+}
+
+footer {
+    background-color: #2D3345;
+    margin: auto;
+    width: 100vw;
+    min-height: 46vh;
+   }
+
+   ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+ol > li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
+    margin: 10px;
+}
+
+li.number {
+    font-size: 1.1em;
+}
+
+ ul.foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .foot > li > a > img {
+    width: 70%;
+ }
+
+ ul.foot > li {
+     background-color: rgba(0, 0, 0, 0.575);
+     border-radius: 10px;
+    transform: translate(10px, 35px);
+    padding: 5px;
+    margin: 6px;
+ }
+
+ ul.foot > li.redes-sociais {
+    color: lightcyan;
+    background-color: transparent;
+ }
+
+ .foot > li > a:hover {
+    text-decoration: none;
+ }
+
+ footer > p {
+    color: lavender;
+    font-size: 0.8em;
+    margin-top: 40px;
+ }
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}

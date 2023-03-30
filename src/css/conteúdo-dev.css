@@ -68,7 +68,7 @@ footer {
     background-color: #2D3345;
     margin: auto;
     width: 100vw;
-    max-height: 69vh;
+    min-height: 35vh;
    }
 
    ol {
