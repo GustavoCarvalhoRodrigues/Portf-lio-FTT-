@@ -23,7 +23,7 @@ main {
 
 section {
     display: inline-flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@ section > h1{
 
 div#project {
    max-height: 19em;
-   transform: rotateY(35deg);
+   transform: rotate3d(1, 0, -3, -5deg);
    margin: 8px;
 }
 
@@ -65,16 +65,28 @@ div.um > img {
     height: 12em;
 }
 
+div.um > img:hover {
+    transform: translateY(8px);
+}
+
 div.dois > img {
     border-radius: 1px 1px 22px 1px;
     width: 93%;
     max-height: 12em;
 }
 
+div.dois > img:hover {
+    transform: translateY(8px);
+}
+
 div.tres > img {
     border-radius: 28px 1px 28px 1px;
     width: 94%;
     height: 12em;
+}
+
+div.tres > img:hover {
+    transform: translateY(8px);
 }
 
 /* Rodapé telas menores */
@@ -163,9 +175,11 @@ section > h1{
     text-shadow: -2px 0px 2px azure;
 }
 
+/* Conteúdo dos projetos e com animação */
+
 div#project {
+    margin: 8px;
    height: 13em;
-   margin: 8px;
    animation: project 10s infinite ease-in-out;
 }
 
