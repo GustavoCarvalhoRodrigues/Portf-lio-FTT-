@@ -89,29 +89,21 @@ div.tres > img:hover {
     transform: translateY(8px);
 }
 
-div.cadastrar {
-    margin: auto;
-}
-
-.cadastrar > button {
+ button#projeto {
     background-image: linear-gradient(362deg, crimson, #faebd700);
+    color: darkred;
     border: 1px solid #ffffff66;
     border-radius: 28px;
     padding: 10px;
     margin: 10px;
 }
 
-button > a {
-    color: darkred;
-    text-decoration: none;
-}
-
-button:hover {
+button#projeto:hover {
     transform: scale3d(1, 1.2, 1);
     box-shadow: -3px -2px 2px khaki;
 }
-/* Rodapé telas menores */
 
+/* Rodapé telas menores */
 footer {
     background-color: #2D3345;
     margin: auto;
