@@ -39,13 +39,24 @@
                     <h4>Product Owner</h4>
                     <img  src="imagens/imagem-PO.jpg" alt="imagem-projeto-3">
                 </div>
-        </section>
-        <form action="projetos.py" method="get" autocomplete="on">
-                <button type="submit" id="projeto"><a href="#project" target="_blank">Cadastre novo projeto</a></button>
-        </form>
+            </section>
+            <!-- Adicionando novos projetos -->
     </main>
      <!-- Rodapé -->
      <footer>
+            <h2>Cadastro de projetos</h2>
+             <form action="cadastrar_projeto.py" method="post">
+                 <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo"><br>
+            
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao"></textarea><br>
+            
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data"><br>
+            
+                <button type="submit" id="projeto">Cadastre novo projeto</button>
+            </form>
         <h2>Fábrica de Tecnologias Turing</h2>
         <ol>
             <li>Av. Universitária KM 3,5 Bloco H Cidade Universitária
@@ -59,6 +70,7 @@
             <li><a href="https://www.instagram.com/uni.computacaoesoftware/" target="_blank"><img src="imagens/icons8-instagram-48.png" alt="imagem-instagram"></a></li>
         </ul>
         <p>&copy;Copyright UniEVANGÉLICA 1947 - 2023</p>
+        
        </footer>
        <!-- Script do menu para telas menores -->
     <script>
