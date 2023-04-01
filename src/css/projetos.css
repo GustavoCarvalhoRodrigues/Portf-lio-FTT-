@@ -91,11 +91,15 @@ div.tres > img:hover {
 
  button#projeto {
     background-image: linear-gradient(362deg, crimson, #faebd700);
-    color: darkred;
     border: 1px solid #ffffff66;
     border-radius: 28px;
     padding: 10px;
     margin: 10px;
+}
+
+button > a {
+    color: darkred;
+    text-decoration: none;
 }
 
 button#projeto:hover {
