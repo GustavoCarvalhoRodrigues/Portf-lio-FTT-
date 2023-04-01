@@ -11,17 +11,22 @@ body, html {
     background-size: contain;
 }
 
+/* Todo o conteúdo */
+
 main {
     background-color: rgba(112, 128, 144, 0.616);
     margin: auto;
     width: 100vw;
 }
 
+/* Seção de projetos */
+
 section {
-   display: inline-flex;
-   align-items: center;
-   flex-wrap: wrap;
-   justify-content: space-evenly;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 section > h1{
@@ -32,42 +37,47 @@ section > h1{
 }
 
 div#project {
-   height: 40vw;
+   max-height: 19em;
+   transform: rotateY(35deg);
    margin: 8px;
-}
-
-div#project > h4 {
-    color: cornsilk;
-    font-family: cursive;
-    font-size: 1.2em;
-    display: inline-block;
-    position: relative;
-    top: 4px;
 }
 
 .um, .dois, .tres {
     border: 1px solid antiquewhite;
     background-color: brown;
-    width: 34%;
+    width: 13em;
+    transform: skewX(-7deg);
 }
 
+div#project > h4 {
+    color: cornsilk;
+    font-family: cursive;
+    font-size: 1.1em;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+}
+
+
 div.um > img {
-    max-width: 94%;
-    min-height: 71%;
     border-radius: 1px 10px 1px 10px;
+    width: 94%;
+    height: 12em;
 }
 
 div.dois > img {
-    width: 88%;
-    height: 71%;
     border-radius: 1px 1px 22px 1px;
+    width: 93%;
+    max-height: 12em;
 }
 
 div.tres > img {
-    width: 88%;
-    height: 85%;
     border-radius: 28px 1px 28px 1px;
+    width: 94%;
+    height: 12em;
 }
+
+/* Rodapé telas menores */
 
 footer {
     background-color: #2D3345;
@@ -126,7 +136,97 @@ li.number {
     margin-top: 40px;
  }
 
-::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
+/* Conteúdo para telas medias e grandes */
+@media screen and (min-width:780px) {
+ 
+    /* Todo o conteúdo */
+
+main {
+    background-color: rgba(112, 128, 144, 0.616);
+    margin: auto;
+    width: 100vw;
 }
+
+/* Seção de projetos */
+
+section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+section > h1{
+    font-family: fantasy;
+    font-size: 2.3em;
+    color: crimson;
+    text-shadow: -2px 0px 2px azure;
+}
+
+div#project {
+   height: 13em;
+   margin: 8px;
+   animation: project 10s infinite ease-in-out;
+}
+
+@keyframes project {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.um, .dois, .tres {
+    border: 1px solid antiquewhite;
+    background-color: brown;
+    width: 17em;
+    transform: skewX(-7deg);
+}
+
+div#project > h4 {
+    color: cornsilk;
+    font-family: cursive;
+    font-size: 1.1em;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+}
+
+
+div.um > img {
+    border-radius: 1px 10px 1px 10px;
+    width: 94%;
+    height: 12em;
+}
+
+div.dois > img {
+    border-radius: 1px 1px 22px 1px;
+    width: 93%;
+    max-height: 12em;
+}
+
+div.tres > img {
+    border-radius: 28px 1px 28px 1px;
+    width: 94%;
+    height: 12em;
+}
+ 
+/* Rodapé telas médias e grandes */
+    footer {
+        min-height: 25vh;
+    }
+    
+    ul.foot {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+     }
+    }
+    
+    /* Tira rolagem da página */
+    ::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+     }
