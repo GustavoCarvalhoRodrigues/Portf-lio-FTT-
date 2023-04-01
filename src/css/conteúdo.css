@@ -37,16 +37,16 @@ body, html {
     display: block;
     margin: auto;
     margin-top: 1px;
-    height: 16vw;
     width: 101vw;
+    height: 16vw;
     }
 
     section#quem-somos > p {
-        text-indent: 10px;
         color: darkslategray;
         text-align: left;
+        text-indent: 10px;
+        line-height: 1.8em;
         margin: 12px;
-        line-height: 1.4em;
     }
 
     section#servicos {
@@ -59,11 +59,11 @@ body, html {
     }
 
     section#servicos > p {
-        text-indent: 10px;
         color: darkslategray;
         text-align: left;
+        text-indent: 10px;
+        line-height: 1.8em;
         margin: 12px;
-        line-height: 1.4em;
     }
 
     /* Rodapé tela menor */
