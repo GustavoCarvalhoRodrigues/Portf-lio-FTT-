@@ -111,7 +111,6 @@ form > label {
 
 button#projeto {
     background-image: linear-gradient(362deg, crimson, #faebd700);
-    color: darkred;
     border: 1px solid #ffffff66;
     border-radius: 28px;
     padding: 10px;
@@ -122,6 +121,11 @@ button#projeto:hover {
     box-shadow: -3px -2px 2px khaki;
     transform: scale3d(1, 1.2, 1);
     cursor: pointer;
+}
+
+button > a {
+    color: darkred;
+    text-decoration: none;
 }
 
    ol {
