@@ -193,6 +193,7 @@ section#quem-somos > p {
   font-size: 1.1em;
   margin: -10px;
   margin-top: 27px;
+  white-space: normal;
 }
 
 /* Rodapé telas médias e grandes */
