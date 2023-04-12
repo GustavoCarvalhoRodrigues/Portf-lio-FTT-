@@ -42,6 +42,7 @@ div#project {
    margin: 8px;
 }
 
+
 .um, .dois, .tres {
     border: 1px solid antiquewhite;
     background-color: brown;
@@ -89,6 +90,15 @@ div.tres > img:hover {
     transform: translateY(8px);
 }
 
+ #project p{
+    display: none;
+}
+
+ h4:hover {
+    display: inline-block;
+    color: white;
+    background-color: black;
+}
 
 /* Rodapé telas menores */
 footer {
