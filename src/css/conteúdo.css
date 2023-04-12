@@ -138,18 +138,6 @@ li.number {
     height: 400px;
     z-index: 0;
 } 
-
-img.background {
-    display: inline-block;
-    border-radius: 2px;
-    transform: rotate3d(13, 27, 10, 39deg);
-    position: absolute;
-    top: 80%;
-    right: 72vw;
-    width: 25%;
-    height: 208px;
-    z-index: 0;
-    }
     
     main {
         margin: auto;
