@@ -1,0 +1,169 @@
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    animation-timing-function: ease-in-out;
+    transition: 200ms;
+}
+
+body {
+    background-color: #120907;
+}
+
+main {
+    background-color: #2d3345;
+    border-radius: 5px;
+    box-shadow: 7px -8px 23px -1px inset black;
+    position: relative;
+    top: 8em;
+    margin: auto;
+    max-width: 65vw;
+    min-height: 60vh;
+}
+
+h1 {
+    text-align: center;
+    font-family: monospace;
+    background-color: #120907;
+    color: white;
+    position: relative;
+    top: 41px;
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    transform: translate(10px, 80px);
+    justify-items: center;
+}
+
+form>input.mail {
+    padding: 2px;
+    min-width: 28vw;
+    margin: 20px;
+    border-style: outset;
+    border-color: grey;
+    outline: 0px;
+    background-color: transparent;
+    color: white;
+}
+
+form>input.word {
+    padding: 2px;
+    min-width: 28vw;
+    margin: 20px;
+    border-style: outset;
+    border-color: grey;
+    outline: 0px;
+    background-color: transparent;
+    color: white;
+}
+
+button {
+    background-color: black;
+    border-radius: 9px;
+    box-shadow: -2px 1px 2px white;
+    position: absolute;
+    top: 10em;
+    left: 28vw;
+    padding: 21px;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translate(-3px, 3px) perspective(19px) scale(1.1);
+    box-shadow: -1px 3px 4px 1px brown;
+    transition: all 200ms;
+}
+
+div>a {
+    background-color: transparent;
+    color: snow;
+    text-decoration: overline;
+    text-decoration-color: brown;
+    position: absolute;
+    top: 13em;
+    left: 26vw;
+}
+
+@media screen and (min-width:992px) {
+    main {
+        background-color: #2D3345;
+        border-radius: 5px;
+        margin: auto;
+        margin-top: -27px;
+        width: 45vw;
+        height: 455px;
+    }
+    h1 {
+        font-family: monospace;
+        background-color: #120907;
+        color: white;
+        text-align: center;
+        font-size: 2.5em;
+        text-decoration: underline;
+        text-decoration-color: brown;
+        position: relative;
+        top: 65px;
+    }
+    form {
+        display: block;
+        background-color: transparent;
+    }
+    form>input.mail {
+        background-color: unset;
+        color: white;
+        position: absolute;
+        top: 3em;
+        left: 10vw;
+        padding: 3px;
+        /* margin: 0px 0px 0px 45px; */
+        position: relative;
+        left: 26%;
+        outline: 0px;
+        min-width: 20vw;
+    }
+    form>input.word {
+        background-color: unset;
+        color: white;
+        position: absolute;
+        top: 8em;
+        left: 8vw;
+        padding: 3px;
+        outline: 0px;
+        position: relative;
+        top: 42px;
+        left: 26%;
+        /* margin: 5px 0px 0px 64px; */
+        min-width: 20vw;
+    }
+    button {
+        background-color: black;
+        border-radius: 9px;
+        box-shadow: -2px 1px 2px white;
+        position: absolute;
+        top: 14em;
+        left: 22vw;
+        padding: 21px;
+        cursor: pointer;
+    }
+    button:active {
+        transform: translate(-3px, 3px) perspective(19px) scale(1.1);
+        box-shadow: -1px 3px 4px 1px brown;
+        transition: all 200ms;
+    }
+    div>a {
+        background-color: transparent;
+        color: snow;
+        text-decoration: overline;
+        text-decoration-color: brown;
+        position: relative;
+        top: 9em;
+        left: 21vw;
+    }
+    div>a:hover {
+        text-shadow: 0px -3px 29px black;
+        cursor: pointer;
+    }
+}

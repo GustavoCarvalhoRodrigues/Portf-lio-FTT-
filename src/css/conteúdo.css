@@ -1,87 +1,92 @@
 @charset "UTF-8";
-
 * {
     padding: 0px;
     margin: 0px;
 }
 
-body, html {
+body,
+html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgb(112 128 144 / 13%);
 }
 
-    /* Imagens 3d só em telas médias e grandes */
-    img.fundo {
-        display: none;
-    }
-    
-    img.background {
-        display: none;
-    }
 
-    /* Conteúdo para telas menores */
-    main {
-        margin: auto;
-        width: 97vw;
-    }
+/* Imagens 3d só em telas médias e grandes */
 
-    section#quem-somos {
-        background-color: rgba(192, 192, 192, 0.336);
-        border: 5px groove;
-        border-radius: 5px 6px 4px 5px;
-        transform: rotateY(29deg);
-        margin-top: 1px;
-    }
+img.fundo {
+    display: none;
+}
 
-    section#quem-somos > img {
+img.background {
+    display: none;
+}
+
+
+/* Conteúdo para telas menores */
+
+main {
+    margin: auto;
+    width: 97vw;
+}
+
+section#quem-somos {
+    background-color: rgba(192, 192, 192, 0.336);
+    border: 5px groove;
+    border-radius: 5px 6px 4px 5px;
+    transform: rotateY(29deg);
+    margin-top: 1px;
+}
+
+section#quem-somos>img {
     display: block;
     margin: auto;
     margin-top: 1px;
     width: 101vw;
     height: 16vw;
-    }
+}
 
-    section#quem-somos > p {
-        color: darkslategray;
-        text-align: left;
-        text-indent: 10px;
-        line-height: 1.8em;
-        margin: 12px;
-    }
+section#quem-somos>p {
+    color: darkslategray;
+    text-align: left;
+    text-indent: 10px;
+    line-height: 1.8em;
+    margin: 12px;
+}
 
-    section#servicos {
-        background-color: rgba(192, 192, 192, 0.336);
-        border: 5px groove;
-        border-radius: 5px 6px 4px 5px;
-        transform: rotateY(29deg);
-        margin-top: 1px;
+section#servicos {
+    background-color: rgba(192, 192, 192, 0.336);
+    border: 5px groove;
+    border-radius: 5px 6px 4px 5px;
+    transform: rotateY(29deg);
+    margin-top: 1px;
+}
 
-    }
+section#servicos>p {
+    color: darkslategray;
+    text-align: left;
+    text-indent: 10px;
+    line-height: 1.8em;
+    margin: 12px;
+}
 
-    section#servicos > p {
-        color: darkslategray;
-        text-align: left;
-        text-indent: 10px;
-        line-height: 1.8em;
-        margin: 12px;
-    }
 
-    /* Rodapé tela menor */
-   footer {
+/* Rodapé tela menor */
+
+footer {
     background-color: #2D3345;
     margin: auto;
     width: 100vw;
     min-height: 25vh;
-   }
+}
 
-   ol {
+ol {
     display: flex;
     flex-direction: column;
     align-items: center;
     list-style: none;
 }
 
-ol > li {
+ol>li {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: antiquewhite;
     margin: 10px;
@@ -91,54 +96,55 @@ li.number {
     font-size: 1.1em;
 }
 
- ul.foot {
+ul.foot {
     display: flex;
     flex-direction: column;
     align-items: center;
- }
+}
 
- .foot > li > a > img {
+.foot>li>a>img {
     width: 70%;
- }
+}
 
- ul.foot > li {
-     background-color: rgba(0, 0, 0, 0.575);
-     border-radius: 10px;
+ul.foot>li {
+    background-color: rgba(0, 0, 0, 0.575);
+    border-radius: 10px;
     transform: translate(10px, 35px);
     padding: 5px;
     margin: 6px;
- }
+}
 
- ul.foot > li.redes-sociais {
+ul.foot>li.redes-sociais {
     color: lightcyan;
     background-color: transparent;
- }
+}
 
- .foot > li > a:hover {
+.foot>li>a:hover {
     text-decoration: none;
- }
+}
 
- footer > p {
+footer>p {
     color: lavender;
     font-size: 0.8em;
     margin-top: 40px;
- }
+}
+
 
 /* Conteúdo para telas medias e grandes */
+
 @media screen and (min-width:780px) {
     /* Imagens com transformação 3d */
     img.fundo {
-    display: block;
-    border-radius: 2px;
-    transform: rotate3d(1, -1, 0, 45deg);
-    position: absolute;
-    top: 19vw;
-    left: 65%;
-    width: 27%;
-    height: 400px;
-    z-index: 0;
-} 
-    
+        display: block;
+        border-radius: 2px;
+        transform: rotate3d(1, -1, 0, 45deg);
+        position: absolute;
+        top: 32vw;
+        left: 70%;
+        width: 27%;
+        height: 400px;
+        z-index: 0;
+    }
     main {
         margin: auto;
         width: 100vw;
@@ -151,25 +157,22 @@ li.number {
         padding-bottom: 30px;
         max-width: 80vw;
     }
-    
-    section#quem-somos  > img{
-    display: block;
-    border-radius: 5px;
-    transform: rotate3d(8, 17, -12, -1deg);
-    opacity: 10;
-    margin: auto;
-    width: 102%;
-    height: 150px;
+    section#quem-somos>img {
+        display: block;
+        border-radius: 5px;
+        transform: rotate3d(8, 17, -12, -1deg);
+        opacity: 10;
+        margin: auto;
+        width: 102%;
+        height: 150px;
     }
-    
-    section#quem-somos > p {
+    section#quem-somos>p {
         text-indent: 10px;
         color: darkslategray;
         text-align: left;
         margin: 12px;
         line-height: 1.8em;
     }
-    
     section#servicos {
         background-color: rgba(192, 192, 192, 0.336);
         border: 5px groove;
@@ -178,8 +181,7 @@ li.number {
         padding-bottom: 30px;
         max-width: 80vw;
     }
-    
-    section#servicos > p {
+    section#servicos>p {
         text-indent: 10px;
         color: darkslategray;
         text-align: left;
@@ -190,18 +192,17 @@ li.number {
     footer {
         min-height: 25vh;
     }
-
     ul.foot {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    
 }
 
 
 /* Tira rolagem da página */
+
  ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
- }
+}
